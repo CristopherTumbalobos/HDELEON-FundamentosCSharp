@@ -4,10 +4,7 @@ using System.Text;
 
 namespace FundamentosCSHARP.Models
 {
-    // HERENCIA: Cerveza hereda de la clase Bebida
-    // IMPLEMENTACIÓN: Cerveza implementa la interfaz IBebidaAlcoholica 
-
-    public class Cerveza : Bebida, IBebidaAlcoholica
+    public class Vino : Bebida, IBebidaAlcoholica
     {
         // IMPLEMENTANDO LOS MIEMBROS DE LA INTERFAZ
         public int Alcohol { get; set; }
@@ -15,7 +12,7 @@ namespace FundamentosCSHARP.Models
         //Especificar el metodo
         public void MaximoRecomendado()
         {
-            Console.WriteLine("El maximo es 10 botellas");
+            Console.WriteLine("El maximo es 3 copas");
         }
 
         // CONSTRUCTOR
@@ -29,7 +26,7 @@ namespace FundamentosCSHARP.Models
         //}
 
         // RECOMENDACION: Los parametros opcionales siempre al final
-        public Cerveza(int Cantidad, string Nombre = "Por Defecto") : base(Nombre, Cantidad)
+        public Vino(int Cantidad, string Nombre = "Vino Por Defecto") : base(Nombre, Cantidad)
         {
 
         }
