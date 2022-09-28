@@ -1,0 +1,14 @@
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\FundamentosCSHARP.exe
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\FundamentosCSHARP.deps.json
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\FundamentosCSHARP.runtimeconfig.json
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\FundamentosCSHARP.runtimeconfig.dev.json
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\FundamentosCSHARP.dll
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\FundamentosCSHARP.pdb
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.csproj.AssemblyReference.cache
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.GeneratedMSBuildEditorConfig.editorconfig
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.AssemblyInfoInputs.cache
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.AssemblyInfo.cs
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.csproj.CoreCompileInputs.cache
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.dll
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.pdb
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.genruntimeconfig.cache
