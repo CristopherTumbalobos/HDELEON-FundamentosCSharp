@@ -12,3 +12,10 @@ D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHA
 D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.dll
 D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.pdb
 D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.genruntimeconfig.cache
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\App-2022\hdeleon-FundamentosCSharp\FundamentosCSHARP-Solution\FundamentosCSHARP\obj\Debug\netcoreapp3.1\FundamentosCSHARP.csproj.CopyComplete

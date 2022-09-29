@@ -11,6 +11,7 @@ namespace FundamentosCSHARP.Models
     {
         // IMPLEMENTANDO LOS MIEMBROS DE LA INTERFAZ
         public int Alcohol { get; set; }
+        public string Marca { get; set; }
 
         //Especificar el metodo
         public void MaximoRecomendado()

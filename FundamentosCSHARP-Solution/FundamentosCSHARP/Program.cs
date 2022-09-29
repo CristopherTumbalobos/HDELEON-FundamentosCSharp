@@ -8,18 +8,16 @@ namespace FundamentosCSHARP
     {
         static void Main(string[] args)
         {
-            var bebidaAlcoholica1 = new Cerveza(100);
-            MostrarRecomendacion(bebidaAlcoholica1);
-            var bebidaAlcoholica2 = new Vino(100);
-            MostrarRecomendacion(bebidaAlcoholica2);
+            CervezaBD cervezaBD = new CervezaBD();
+            var cervezas = cervezaBD.Get();
 
-            //Para ver las interfaces que implementa la clase "List"
-            List<string> hola = new List<string>();
-        }
-
-        static void MostrarRecomendacion(IBebidaAlcoholica bebida)
-        {
-            bebida.MaximoRecomendado();
+            foreach (var cerveza in cervezas)
+            {
+                Console.WriteLine(cerveza.Nombre);
+                Console.WriteLine(cerveza.Marca);
+                Console.WriteLine(cerveza.Alcohol);
+                Console.WriteLine(cerveza.Cantidad);
+            }
         }
     }
 }
