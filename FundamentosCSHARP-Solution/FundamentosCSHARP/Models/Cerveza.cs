@@ -20,6 +20,11 @@ namespace FundamentosCSHARP.Models
         }
 
         // CONSTRUCTOR
+        //Constructor que no recibe datos (PARA REALIZAR SERIALIZACIONES Y DESEREALIZACIONES DE DATOS)
+        public Cerveza() : base(null, 0)
+        {
+
+        }
 
         //public Cerveza () : base("Cervezita", 400)
         //{
@@ -34,6 +39,8 @@ namespace FundamentosCSHARP.Models
         {
 
         }
+
+
 
         //ATRIBUTO DE LA INTERFAZ POR DEFECTO
         //public int Alcohol { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
