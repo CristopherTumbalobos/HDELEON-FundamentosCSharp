@@ -7,11 +7,12 @@ namespace FundamentosCSHARP.Models
     // HERENCIA: Cerveza hereda de la clase Bebida
     // IMPLEMENTACIÓN: Cerveza implementa la interfaz IBebidaAlcoholica 
 
-    public class Cerveza : Bebida, IBebidaAlcoholica
+    public class Cerveza : Bebida, IBebidaAlcoholica, IRequestable
     {
         // IMPLEMENTANDO LOS MIEMBROS DE LA INTERFAZ
         public int Alcohol { get; set; }
         public string Marca { get; set; }
+        public int id { get; set; }
 
         //Especificar el metodo
         public void MaximoRecomendado()
