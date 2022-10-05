@@ -12,52 +12,41 @@ using FundamentosCSHARP.Errors;
 
 namespace FundamentosCSHARP
 {
-    class Program
+    static class Program
     {
-        //DELEGADOS: Para agregar funcionalidad a nuestras funcionalidades
-        //public delegate void Mostrar(string cadena);
-        //public delegate string Mostrar(string cadena);
-
-        //async: Para realizar otras acciones mientras esperamos
-        static async Task Main(string[] args)
+        public class Beer
         {
-            //FUNC: Regresa el ultimo generico(parametro)
-            //Func<string, int> mostrar = Show;
-            //Mostrar mostrar = Show;
-            //HacerAlgo(mostrar);
-
-            //ACTION: No regresa nada
-            //=>: Funcion anonima (por si solo se usa una vez)
-            Action<string, string> mostrar = (a, b) => Console.WriteLine(a+b);
-            HacerAlgo(mostrar);
+            public string Name { get; set; }
+            public int Alcohol { get; set; }
         }
 
-        public static void HacerAlgo(Action<string, string> funcionFinal)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Antes");
-            //funcionFinal("Se envio desde otra función");
-            funcionFinal("Se envio desde otra función", " Otra cadena");
-            Console.WriteLine("Despues");
+            //PREDICATE: Implementacion de los delegados, parecido a Func o Action. Sentencia que regresa TRUE o FALSE. Permite guardar condiciones, o la lógica.
+
+            //var numbers = new List<int> { 1, 56, 2, 3, 3, 45, 6 };
+            //var predicate = new Predicate<int>(x => x % 2 == 0);
+            //Predicate<int> negativePredicate = x => !predicate(x);
+            //var dividers2 = numbers.FindAll(negativePredicate);
+            //dividers2.ForEach(d => { Console.WriteLine(d); });
+
+            var beers = new List<Beer>()
+            {
+                new Beer() {Name = "Ipa", Alcohol = 7},
+                new Beer() {Name = "Pale Ale", Alcohol = 8},
+                new Beer() {Name = "Stout", Alcohol = 9},
+                new Beer() {Name = "Tripel", Alcohol = 15}
+            };
+
+            beers.ShowBeerThatIGetDrunk(x => x.Alcohol >= 8 && x.Alcohol<15);
         }
 
-        //public static void Show(string cad, string cad2)
-        //{
-        //    Console.WriteLine(cad+cad2);
-        //}
-
-        //public static void Show(string cad)
-        //{
-        //    Console.WriteLine("Hola, soy un delegado" + cad);
-        //}
-
-        //public static string Show(string cad)
-        //{
-        //    return cad.ToUpper();
-        //}
-
-        //public static int Show(string cad)
-        //{
-        //    return cad.Count();
-        //}
+        //THIS: Para realizar una extension, para esto el "Program" debe ser static porque el "Where" proviene de una clase static
+        static void ShowBeerThatIGetDrunk(this List<Beer> beers, Predicate<Beer> condition)
+        {
+            var evilBeers = beers.FindAll(condition);
+            //beers.Where<>();
+            evilBeers.ForEach(d => Console.WriteLine(d.Name));
+        }
     }
 }
