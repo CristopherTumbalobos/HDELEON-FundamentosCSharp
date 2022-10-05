@@ -14,41 +14,50 @@ namespace FundamentosCSHARP
 {
     class Program
     {
+        //DELEGADOS: Para agregar funcionalidad a nuestras funcionalidades
+        //public delegate void Mostrar(string cadena);
+        //public delegate string Mostrar(string cadena);
+
         //async: Para realizar otras acciones mientras esperamos
         static async Task Main(string[] args)
         {
-            try
-            {
-                var searcherBeer = new SearcherBeer();
-                var cantidad = searcherBeer.GetCantidad("Stoasdsaut");
-                Console.WriteLine("TRY: Todo bien");
-            }
-            catch (FieldAccessException ex)
-            {
-                Console.WriteLine("CATCH: Si te he encontrado");           
-            }
-            catch (InvalidOperationException ex)
-            {
-                Console.WriteLine("CATCH: Ha caido en una operacion inválida");           
-            }
-            catch(BeerNotFoundException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            //Exception: Excepcion general
-            catch(Exception ex)
-            {
-                Console.WriteLine("CATCH: Una excepcion general");
-            }
-            //Finally: Siempre se ejecuta
-            finally
-            {
-                Console.WriteLine("FINALLY: Esto siempre se ejecuta");
-            }
+            //FUNC: Regresa el ultimo generico(parametro)
+            //Func<string, int> mostrar = Show;
+            //Mostrar mostrar = Show;
+            //HacerAlgo(mostrar);
 
-
-
-
+            //ACTION: No regresa nada
+            //=>: Funcion anonima (por si solo se usa una vez)
+            Action<string, string> mostrar = (a, b) => Console.WriteLine(a+b);
+            HacerAlgo(mostrar);
         }
+
+        public static void HacerAlgo(Action<string, string> funcionFinal)
+        {
+            Console.WriteLine("Antes");
+            //funcionFinal("Se envio desde otra función");
+            funcionFinal("Se envio desde otra función", " Otra cadena");
+            Console.WriteLine("Despues");
+        }
+
+        //public static void Show(string cad, string cad2)
+        //{
+        //    Console.WriteLine(cad+cad2);
+        //}
+
+        //public static void Show(string cad)
+        //{
+        //    Console.WriteLine("Hola, soy un delegado" + cad);
+        //}
+
+        //public static string Show(string cad)
+        //{
+        //    return cad.ToUpper();
+        //}
+
+        //public static int Show(string cad)
+        //{
+        //    return cad.Count();
+        //}
     }
 }
